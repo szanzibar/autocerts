@@ -3,16 +3,16 @@
 #### This guide will help you get valid certificates for your domain from let's encrypt, and automatically renew before they expire.
 #### I'm including instructions to use this with [stunnel](https://www.stunnel.org) which I use to access [BlueIris](https://blueirissoftware.com) over https, but you could use this guide to set up certs for pretty much anything. 
 
-###Requirements
+### Requirements
 - Windows
 - A domain name. If you need to buy one now, I recommend [namecheap](https://www.namecheap.com). The one caveat is you need to spend 50 bucks to get access to the API, which you need for this guide. You could do that by buying your domain for 5+ years in advance.
     - A different registrar may be better, just try to find one with API access
     - Google domains does not have an API
     - Without API access, you have to manually prove you own the domain to get a certificate. This is doable, just a bit inconvenient.
 
-###Instructions
+### Instructions
 
-####Get your first cert
+#### Get your first cert
 
 Open an administrative Powershell terminal (`Win+X, a`)
 
@@ -122,7 +122,7 @@ Hopefully all went well, and you can access Blueiris through https
 
 ***
 
-####Add a powershell script to automatically renew our certs, since they expire every 3 months.
+#### Add a powershell script to automatically renew our certs, since they expire every 3 months.
 
 Save the [Update-StunnelCerts.ps1](https://github.com/szanzibar/autocerts/blob/main/Update-StunnelCerts.ps1) script somewhere. I put mine at c:\users\me\Update-StunnelCerts.ps1
 
