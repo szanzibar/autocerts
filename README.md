@@ -21,8 +21,7 @@ We'll set the powershell [execution policy](https://docs.microsoft.com/en-us/pow
 Set-ExecutionPolicy RemoteSigned -Force
 ```
 
-Install the Posh-ACME module that will handle retrieving certs from lets encrypt
-Documentation:
+Install the Posh-ACME module that will handle retrieving certs from lets encrypt.
 - https://github.com/rmbolger/Posh-ACME
 - https://github.com/rmbolger/Posh-ACME/blob/main/Tutorial.md 
 
@@ -130,8 +129,10 @@ Open up Task scheduler, and Create a task. (Don't use Create Basic Task)
 
 **General tab:**
 Name it, select "Run whether user is logged on or not
+
 **Triggers tab:**
 New -> One time (now), Repeat task every: 12 hours, for a duration of Indefinitely, Ok
+
 **Actions tab:**
 New -> Program/script: `powershell.exe`
 Add arguments: `-File "C:\Users\me\Update-StunnelCerts.ps1"`
