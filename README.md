@@ -136,7 +136,9 @@ New -> One time (now), Repeat task every: 12 hours, for a duration of Indefinite
 **Actions tab:**
 New -> Program/script: `powershell.exe`
 Add arguments: `-File "C:\Users\me\Update-StunnelCerts.ps1"`
+
 Click ok
+
 Click ok to save the task. It should prompt you for your password, so that it can run the task even if you are logged off
 
 :tada:That should be it!:tada:
